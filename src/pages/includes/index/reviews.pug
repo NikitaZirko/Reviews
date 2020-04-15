@@ -1,0 +1,57 @@
+div.reviews
+    ul.caption
+        li.caption__item Фото
+        li.caption__item Наименование товара
+        li.caption__item Ваши отзывы
+        li.caption__item Статус отзыва
+        li.caption__item Действия
+    section.row.reviews-published
+        div.column
+            figure
+                img.reviews-img(src="../img/photo-1.jpg", alt="товар")
+                figcaption.reviews-item Дрель ударная BOSCH PSB 550 RЕ, БЗП Арт.0603130020
+        div.column
+            div.rating
+                div.rating__index
+                ul.rating__items
+                    li.rating__item Впечатление: 5
+                    li.rating__item Соответствие: 4
+                    li.rating__item Надёжность: 5
+            div.reviews-description Значит купил я данную модель, поработал неделю, отказал один аккумулятор, заряд держит так себе, НОООООО МАГАЗИН АДЕКВАТНЫЙ, ОБМЕНЯЛИ НА НОВЫЙ, ПРИЧЁМ ПРИВЕЗЛИ ДОМОЙ. С ТАКИМ ПРОДАВЦОМ ПРИЯТНО...
+            div.details
+                p.details-text Подробнее
+                span.details-arrow
+        div.column
+            div.status
+                div.status__label-enable Опубликован
+                p.status__date 1 августа, 2018
+        div.column
+            a.reviews-add(href="#") Дополнить отзыв
+
+    section.row.reviews-published-added
+        div.column
+        div.column
+            div.reviews-description-added Дополненный отзыв
+            div.reviews-description Год прошел, работает как пушка!
+            img.reviews-lightbox(src="../img/photo-2.jpg", alt="товар")
+            img.reviews-lightbox(src="../img/photo-3.jpg", alt="товар")
+        div.column
+            div.status
+                div.status__label-verification На модерации
+                p.status__date 19 августа, 2018
+        div.column
+
+    section.row.reviews-unpublished
+        div.column
+            figure
+                img.reviews-img(src="../img/photo-4.jpg", alt="товар")
+                figcaption.reviews-item Декоративный металлический экран на радиатор 3-х секционный 3 ДМЭР
+        div.column
+            div.reviews-description_disable К сожалению, ваш отзыв не прошёл модерацию.
+        div.column
+            div.status
+                div.status__label-disable Не опубликован
+                p.status__date 23 июня, 2019
+        div.column
+
+
