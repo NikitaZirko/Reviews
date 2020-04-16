@@ -3,7 +3,7 @@
     display: block;
     margin: 0 auto;
     @include media-tablet {
-        margin: 0 20px;
+        margin: 20px 20px;
     }
 }
 
@@ -16,10 +16,13 @@
 }
 
 @mixin status-reviews () {
-    width: 93px;
+    width: 106px;
     height: 22px;
+    padding: 5px 5px;
     border-radius: 2px;
     color: white;
     text-transform: uppercase;
     text-align: center;
+    white-space: nowrap;
+    display: inline-block;
 }
