@@ -1,0 +1,141 @@
+.reviews {
+    padding: 20px 0 200px 0;
+    @include row-center ();
+}
+
+.caption {
+    padding: 17px 0 17px 17px;
+    margin: 0;
+    display: flex;
+    border: 1px solid #F2F2F2;
+    .caption__item {
+        list-style-type: none;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        color: #979797;
+    }
+    @include media-custom(800px) {
+        display: none;
+    }
+}
+
+.caption__item:nth-child(1),
+.column:nth-child(1) {
+    flex: 1 1 73px;
+}
+.caption__item:nth-child(2),
+.column:nth-child(2) {
+    flex: 1 1 200px;
+}
+.caption__item:nth-child(3),
+.column:nth-child(3) {
+    flex: 1 1 450px;
+}
+.caption__item:nth-child(4),
+.column:nth-child(4) {
+    flex: 1 1 143px;
+}
+.caption__item:nth-child(5),
+.column:nth-child(5) {
+    flex: 1 1 148px;
+}
+
+.caption__item:not(:last-child),
+.column:not(:last-child) {
+    padding-right: 36px;
+}
+
+.row {
+    display: flex;
+    padding: 17px 0 17px 17px;
+    @include media-custom(800px) {
+        flex-wrap: wrap;
+        .column {
+            flex: 1 1 100%;
+            padding: 0;
+        }
+    }
+}
+
+.reviews-img {
+    padding-top: 5px;
+}
+
+.reviews-item {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #383838;
+}
+
+.rating {
+    .rating__icons {
+        .fa-star,
+        .fa-star-half-alt {
+            color: #ED8A19;
+            &:hover {
+                color: gray;
+                transition: ease-in-out;
+            }
+        }
+        .rating__index {
+            padding-left: 10px;
+            font-size: 1.2rem;
+            line-height: 2.0rem;
+            color: #AFAFAF;
+        }
+    }
+    .rating__items {
+        display: flex;
+        padding: 0;
+        .rating__item {
+            padding-right: 15px;
+            font-size: 1.2rem;
+            line-height: 2.0rem;
+            list-style-type: none;
+            color: #AFAFAF;
+        }
+    }
+}
+
+.reviews-description {
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    letter-spacing: 0.025rem;
+    color: #332F29;
+}
+
+.details {
+    .details-text {
+        font-size: 1.1rem;
+        line-height: 2.0rem;
+        color: #FF6D00;
+        &:hover {
+            color: gray;
+            transition: ease-in-out;
+        }
+    }
+    .fa-chevron-down {
+        padding-left: 10px;
+    }
+}
+
+.status {
+    .status__label-enable {
+        @include status-riviews ();
+        background-color: #50AD01;
+    }
+    .status__label-verification {
+        @include status-riviews ();
+        background-color: #96ce67;
+    }
+    .status__label-disable {
+        @include status-riviews ();
+        background-color: #A0A0A0;
+    }
+    .status__date {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #AFAFAF;
+    }
+}

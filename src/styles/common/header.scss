@@ -1,10 +1,22 @@
-@import "../mixins/media";
-
-header {
-    width: 220px;
-    background-color: red;
-
+.header {
+    padding: 100px 0 0 0;
+    @include row-center ();
+    .header__title {
+        @include title ();
+    }
+    .notify {
+        padding: 10px 20px;
+        display: flex;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        background-color: #F7F7F7;
+        color: #383838;
+        .fa-exclamation-circle {
+            margin: 2rem 1rem 0 3rem;
+            color: #FF6D00;
+        }
+    }
     @include media-tablet {
-        width: 500px;
+        padding: 70px 0 0 0;
     }
 }

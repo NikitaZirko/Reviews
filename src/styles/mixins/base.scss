@@ -1,0 +1,25 @@
+@mixin row-center () {
+    max-width: 930px;
+    display: block;
+    margin: 0 auto;
+    @include media-tablet {
+        margin: 0 20px;
+    }
+}
+
+@mixin title () {
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.7rem;
+    color: #383838;
+}
+
+@mixin status-reviews () {
+    width: 93px;
+    height: 22px;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}

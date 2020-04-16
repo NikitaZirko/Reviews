@@ -1,4 +1,7 @@
 @import "../../local_modules/normalize.css/normalize";
+@import "../common/variables";
+@import "../mixins/base";
+@import "../mixins/media";
 
 *,
 *::before,
@@ -6,13 +9,20 @@
     box-sizing: inherit;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 html {
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-stack;
+    color: $primary-color;
 }
 
 img {
