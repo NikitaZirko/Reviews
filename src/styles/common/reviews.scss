@@ -21,6 +21,47 @@
     color: #383838;
 }
 
+.tabs {
+    .tabs__content {
+        display: block;
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
+        transition: all .5s;
+        .tabs__content-inner {
+            padding-bottom: 10px;
+            font-size: 1.2rem;
+            line-height: 2.0rem;
+            letter-spacing: 0.025rem;
+            color: #332F29;
+        }
+    }
+    .tab-open {
+        height: 140px !important;
+    }
+    .tabs__details {
+        .tabs__details-text {
+            margin-bottom: 15px;
+            display: block;
+            font-size: 1.1rem;
+            line-height: 2.0rem;
+            color: #FF6D00;
+            &:hover {
+                color: gray;
+                transition: ease-in-out;
+            }
+        }
+        .fa-chevron-down {
+            transition: all .5s;
+            margin-left: 10px;
+            transform-origin: center center;
+        }
+        .tab-rotate {
+            transform: rotate(180deg);
+        }
+    }
+}
+
 .reviews-description {
     padding-bottom: 10px;
     font-size: 1.2rem;
@@ -37,7 +78,7 @@
     color: #979797;
 }
 
-.reviews-description-added {
+.reviews-added {
     font-size: 1.1rem;
     line-height: 2.0rem;
     color: #FF6D00;
@@ -196,27 +237,32 @@
         .lightbox-img {
             transition: all .2s ease-in-out;
             &:hover {
-                transform: scale(1.1);
+                opacity: 0.9
             }
         }
     }
 }
 
-.details {
-    .details-text {
-        margin-bottom: 15px;
-        display: block;
-        font-size: 1.1rem;
-        line-height: 2.0rem;
-        color: #FF6D00;
-        &:hover {
-            color: gray;
-            transition: ease-in-out;
-        }
-    }
-    .fa-chevron-down {
-        padding-left: 10px;
-    }
+.lightbox-wrap {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 1.5s;
+}
+
+.lightbox-open {
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
 }
 
 .status {
